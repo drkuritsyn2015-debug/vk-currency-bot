@@ -22,10 +22,13 @@ public class AiProperties {
     @NotBlank(message = "суфикс не обязателен, но лучше проверить")
     private final String suffix;
 
-    public AiProperties(String url, String model, String prompt, String suffix) {
+    private final String apiKey;
+
+    public AiProperties(String url, String model, String prompt, String suffix,String apiKey) {
         this.url = url;
         this.model = model;
         this.prompt = prompt;
         this.suffix = suffix;
+        this.apiKey=apiKey;
     }
 }
